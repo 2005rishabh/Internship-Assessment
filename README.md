@@ -21,8 +21,6 @@ To run the entire application stack:
     ```bash
     docker-compose up --build
     ```
-    *(Note: You might need execute with `sudo` depending on your Docker configuration)*
-
 2.  Access the application:
     - **Frontend**: [http://localhost:5173](http://localhost:5173)
     - **Backend API**: [http://localhost:5000](http://localhost:5000)
@@ -50,6 +48,6 @@ If you modify the source code, the changes won't reflect immediately inside the 
 
 - **Permission Denied**: If you get a permission error connecting to the Docker daemon socket, try running the command with `sudo`:
     ```bash
-    sudo docker-compose up --build
+    sudo docker-compose up --build (for linux only)
     ```
 - **Port Conflicts**: Ensure ports `5173` and `5000` are not occupied by other services on your host machine.
